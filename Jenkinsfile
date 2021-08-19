@@ -17,7 +17,7 @@ pipeline {
                 //sh "mvn -Dmaven.test.failure.ignore=true clean package"
 
                 // To run Maven on a Windows agent, use
-                 bat "mvn -f Day1-BankApp\\pom.xml -Dmaven.test.failure.ignore=true clean package"
+                 bat "mvn -f Day1-BankApp\\pom.xml -Dmaven.test.failure.ignore=true clean install test package"
             }
 
             post {
