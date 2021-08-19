@@ -3,14 +3,14 @@ pipeline {
 
     tools {
         // Install the Maven version configured as "M3" and add it to the path.
-        maven "maven3.8"
+        maven "maven3"
     }
 
     stages {
         stage('Build') {
             steps {
                 // Get some code from a GitHub repository
-                git 'https://github.com/capgteam/bankapp.git'
+                git 'https://github.com/NAGENDRAREDDY1/newbankapp.git'
 
                 // Run Maven on a Unix agent.
                 //sh "mvn -Dmaven.test.failure.ignore=true clean package"
